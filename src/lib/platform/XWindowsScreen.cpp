@@ -1392,7 +1392,7 @@ XWindowsScreen::handleSystemEvent(const Event& event, void*)
 			XkbEvent* xkbEvent = reinterpret_cast<XkbEvent*>(xevent);
 			switch (xkbEvent->any.xkb_type) {
 			case XkbMapNotify:
-				refreshKeyboard(xevent);
+				//refreshKeyboard(xevent);
 				return;
 
 			case XkbStateNotify:
